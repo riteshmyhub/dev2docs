@@ -63,12 +63,27 @@ body {
    height: calc(100vh - 64px);
    overflow-y: scroll;
 }
-.nav-link {
-   color: black;
+/* docs-link */
+.docs-link {
+   color: rgb(129, 126, 126) !important;
+   text-decoration: none !important;
 }
-.active-link {
-   color: blue;
+.active-docs-link {
+   color: #1976d2;
+   font-weight: 600 !important;
 }
+
+/* .docs-sub-link */
+.docs-sub-link {
+   color: black !important;
+   text-decoration: none !important;
+}
+
+.active-docs-sub-link {
+   color: #1976d2 !important;
+}
+/* docs-sub-link  */
+
 .error {
    color: red;
    display: block;
@@ -84,6 +99,9 @@ input[type="text"] {
 }
 .t-t-u-s {
    text-transform: unset !important;
+}
+.t-t-c {
+   text-transform: capitalize !important;
 }
 .form-card {
    word-wrap: break-word;

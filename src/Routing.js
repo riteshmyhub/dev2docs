@@ -1,6 +1,7 @@
 import { Navigate, useRoutes } from "react-router-dom";
 import Auth from "./app/auth/Auth";
 import Docs from "./app/docs/Docs";
+import { docsRoutes } from "./app/docs/docs.routes";
 import Home from "./app/home/Home";
 import NotFound from "./app/NotFound";
 
@@ -25,6 +26,7 @@ export default function Routing() {
          path: "react",
          element: <Docs />,
          caseSensitive: true,
+         children: docsRoutes,
       },
       {
          path: "*",
